@@ -122,18 +122,29 @@ header {
 }
 
 .e4 {
-
-    margin-right: 30px;
-    color: #2459f4;
-
+    position: fixed; /* Mantiene la posición fija en la ventana */
+    left: 895px; /* Establece la posición horizontal en 600px */
+    margin-right: 30px; /* Margen a la derecha */
+    color: #2459f4; /* Color del texto */
 }
 
 .e4:hover {
-
-    text-decoration: underline;
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
 }
 
 .e5 {
+    top: 15px;
+    position: fixed; /* Mantiene la posición fija en la ventana */
+    left: 1040px; /* Mantiene la posición horizontal en 600px */
+    margin-left: 20px; /* Margen a la izquierda */
+    background-color: #2459f4; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+}
+
+
+.e6 {
 
     margin-left: 20px;
     background-color: #2459f4;
@@ -142,6 +153,8 @@ header {
     color: #ffffff;
 
 }
+
+
 
 .e5:hover {
 
@@ -465,4 +478,42 @@ article {
 .p-101 {
 
     line-height: 140%;
+}
+
+
+/* Estilos generales para los botones de idioma */
+.btn-language {
+    position: fixed; /* Mantiene el botón fijo en la ventana */
+    left: 1600px; /* Ajusta la posición horizontal (mantener este valor) */
+    width: 40px; /* Ancho del botón */
+    height: 25px; /* Alto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    background-size: cover; /* Asegura que la imagen cubra todo el botón */
+    background-position: center; /* Centra la imagen en el botón */
+    transition: transform 0.2s; /* Suaviza la transición al escalar */
+    margin: 0 5px; /* Espaciado entre botones */
+}
+
+/* Efecto de hover para dar feedback */
+.btn-language:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Botón para español (bandera de España o imagen personalizada) */
+.btn-es {
+    background-image: url('imageny.png'); /* Reemplaza con la ruta de tu imagen */
+}
+
+/* Botón para inglés (bandera del Reino Unido o EE. UU.) */
+.btn-en {
+    background-image: url('imagenz.png'); /* Reemplaza con la ruta de tu imagen */
+    left: calc(1600px + 50px); /* Ajusta la posición horizontal del botón para inglés */
+}
+
+/* Botón para alemán (bandera de Alemania o imagen personalizada) */
+.btn-de {
+    background-image: url('imagenx.png'); /* Reemplaza con la ruta de tu imagen */
+    left: calc(1600px + 100px); /* Ajusta la posición horizontal del botón para alemán */
 }
